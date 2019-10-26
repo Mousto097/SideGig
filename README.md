@@ -2,9 +2,9 @@
 
 A platform to help software developers find paid side gigs.
 
-![SideGig Screenshot](WikiImages/SideGigHomepage.png?raw=true)
-![SideGig Screenshot](WikiImages/SideGigAllGigsHomepage.png?raw=true)
-![SideGig Screenshot](WikiImages/SideGigAddGigHomepage.png?raw=true)
+![SideGig Screenshot](WikiImages/Homepage.png?raw=true)
+![SideGig Screenshot](WikiImages/ShowAllGigs.png?raw=true)
+![SideGig Screenshot](WikiImages/AddAGig.png?raw=true)
 
 # Table of Contents
 
