@@ -1,0 +1,100 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 11.5
+-- Dumped by pg_dump version 11.5
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: gigs; Type: TABLE; Schema: public; Owner: api
+--
+
+CREATE TABLE public.gigs (
+    id integer NOT NULL,
+    title character varying(200),
+    technologies character varying(200),
+    budget character varying(20),
+    description text,
+    contact_email character varying,
+    "createdAt" date,
+    "updatedAt" date
+);
+
+
+ALTER TABLE public.gigs OWNER TO api;
+
+--
+-- Name: gigs_id_seq; Type: SEQUENCE; Schema: public; Owner: api
+--
+
+CREATE SEQUENCE public.gigs_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.gigs_id_seq OWNER TO api;
+
+--
+-- Name: gigs_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: api
+--
+
+ALTER SEQUENCE public.gigs_id_seq OWNED BY public.gigs.id;
+
+
+--
+-- Name: gigs id; Type: DEFAULT; Schema: public; Owner: api
+--
+
+ALTER TABLE ONLY public.gigs ALTER COLUMN id SET DEFAULT nextval('public.gigs_id_seq'::regclass);
+
+
+--
+-- Data for Name: gigs; Type: TABLE DATA; Schema: public; Owner: api
+--
+
+COPY public.gigs (id, title, technologies, budget, description, contact_email, "createdAt", "updatedAt") FROM stdin;
+1	Looking for a React developer	react, javascript, html, css	$3000	Sint amet nulla culpa est qui ad eiusmod incididunt labore non non velit enim. Laboris tempor consectetur magna proident magna ipsum. Id anim tempor cupidatat aute voluptate culpa voluptate labore enim. Ex excepteur pariatur fugiat quis id nisi culpa. Ad pariatur anim laborum laborum commodo incididunt deserunt ea. Magna est qui cillum dolor id consequat exercitation dolor ea sit adipisicing occaecat sit.	user1@gmail.com	2019-10-26	2019-10-26
+2	Simple Wordpress website	wordpress, php, html, css	$5000	Sint amet nulla culpa est qui ad eiusmod incididunt labore non non velit enim. Laboris tempor consectetur magna proident magna ipsum. Id anim tempor cupidatat aute voluptate culpa voluptate labore enim. Ex excepteur pariatur fugiat quis id nisi culpa. Ad pariatur anim laborum laborum commodo incididunt deserunt ea. Magna est qui cillum dolor id consequat exercitation dolor ea sit adipisicing occaecat sit.	user2@gmail.com	2019-10-26	2019-10-26
+3	Flutter dev for mobile app	wordpress,php,html,css	$505	Sint amet nulla culpa est qui ad eiusmod incididunt labore non non velit enim. Laboris tempor consectetur magna proident magna ipsum. Id anim tempor cupidatat aute voluptate culpa voluptate labore enim. Ex excepteur pariatur fugiat quis id nisi culpa. Ad pariatur anim laborum laborum commodo incididunt deserunt ea. Magna est qui cillum dolor id consequat exercitation dolor ea sit adipisicing occaecat sit.	user3@gmail.com	2019-10-26	2019-10-26
+4	Wanted: a strong PHP developer for social web app	php,laravel,html,css,postgres,mysql	$600	You’ll join two other talented CO-OP students to form a team that experiments and innovates with modern technology. As a team, you’ll develop an experimental product from idea to release. You’ll be mentored and helped along the way and will demo your product to management at the end of your 16-week internship.	user4@gmail.com	2019-10-26	2019-10-26
+\.
+
+
+--
+-- Name: gigs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: api
+--
+
+SELECT pg_catalog.setval('public.gigs_id_seq', 4, true);
+
+
+--
+-- Name: gigs gigs_pkey; Type: CONSTRAINT; Schema: public; Owner: api
+--
+
+ALTER TABLE ONLY public.gigs
+    ADD CONSTRAINT gigs_pkey PRIMARY KEY (id);
+
+
+--
+-- PostgreSQL database dump complete
+--
+
