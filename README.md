@@ -35,10 +35,14 @@ SideGig is a powerful tool for finding paid side gigs near you.
 
 You can find more information about the project in my [Github Wiki](https://github.com/Mousto097/SideGig/wiki).
 
+# Contact
+
+- [Personal LinkedIn](https://www.linkedin.com/in/mamadou-bah-9962a711b/)
+
 # License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-# Contact
+## Acknowledgements
 
-- [Personal LinkedIn](https://www.linkedin.com/in/mamadou-bah-9962a711b/)
+- [Traversy Media](https://www.youtube.com/user/TechGuyWeb)
