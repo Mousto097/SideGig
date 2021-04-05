@@ -6,14 +6,6 @@ A platform to help software developers find paid side gigs.
 ![SideGig Screenshot](WikiImages/ShowAllGigs.png?raw=true)
 ![SideGig Screenshot](WikiImages/AddAGig.png?raw=true)
 
-# Table of Contents
-
-- [What is SideGig?](#what-is-SideGig)
-- [Contributors](#contributors)
-- [Tech Stack](#tech-stack)
-- [License](#license)
-- [Contact](#contact)
-
 # What is SideGig?
 
 SideGig is a powerful tool for finding paid side gigs near you.
